@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { MinimalFooter } from "./components/ui/MinimalFooter";
 import HomePage from "./pages/HomePage";
@@ -18,6 +18,17 @@ import GameDevelopmentPage from "./pages/GameDevelopmentPage";
 import DesktopApplicationPage from "./pages/DesktopApplicationPage";
 import Analytics from "./components/Analytics";
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    // If using LocomotiveScroll, also reset the native scroll position
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 const App = () => {
   useEffect(() => {
     (async () => {
@@ -30,6 +41,7 @@ const App = () => {
   return (
     <div className="w-full min-h-screen flex flex-col">
       <Analytics />
+      <ScrollToTop />
       <Navbar />
       <main className="flex-1">
         <Routes>
