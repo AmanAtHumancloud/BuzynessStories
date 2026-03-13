@@ -65,6 +65,11 @@ export const routeSeo = {
     description:
       "Learn about BuzynessStories, a web design and product development team combining UX, engineering and strategy to ship digital products.",
   },
+  "/how-we-work": {
+    title: `How We Work – Our Process | ${SITE_NAME}`,
+    description:
+      "From discovery to launch: see our 6-phase process for web design and development. Clear deliverables, no surprises.",
+  },
   "/contact": {
     title: `Contact ${SITE_NAME} | Request a project quote`,
     description:

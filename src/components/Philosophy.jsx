@@ -1,4 +1,5 @@
 import React from "react";
+import MobileVideo from "./MobileVideo";
 
 const Philosophy = ({ standalone }) => {
   return (
@@ -15,13 +16,10 @@ const Philosophy = ({ standalone }) => {
         </h2>
       </header>
       <div className="flex flex-col md:flex-row items-center justify-center md:gap-x-14">
-        <video
+        <MobileVideo
           src="https://cdn.cuberto.com/cb/home/summary/2.mp4?3"
-          autoPlay
-          muted
-          loop
           className="w-[90%] mx-auto md:mx-0 md:w-1/3"
-        ></video>
+        />
         <div className="space-y-3 text-xl font-medium px-6">
           <p>
             In our team, developers work alongside &nbsp;

@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import MobileVideo from "./MobileVideo";
 
 const Projects = () => {
   const leftColumnProjects = [
@@ -54,13 +55,10 @@ const Projects = () => {
         <div>Featured</div>
         <div className="flex items-center md:items-end my-1">
           <div className="h-14 md:h-28 w-20 md:w-40 rounded-full overflow-hidden">
-            <video
+            <MobileVideo
               src="https://cdn.cuberto.com/cb/home/featured/header.mp4?2"
-              className=""
-                loop
-                autoPlay
-                muted
-            ></video>
+              className="w-full h-full object-cover"
+            />
           </div>
           <div>
             <span

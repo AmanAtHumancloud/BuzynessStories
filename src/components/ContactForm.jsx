@@ -20,7 +20,7 @@ const BUDGET_OPTIONS = [
 const validateEmail = (email) =>
   /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email?.trim() || "");
 
-const CONTACT_EMAIL = "buzinessstories@gmail.com";
+const CONTACT_EMAIL = "buzynessstories@gmail.com";
 const CONTACT_PHONE = "+91 7875879291";
 const CONTACT_ADDRESS =
   "Cloudtool Technologies Pvt Ltd, IT Park, Navale Icon, 101 First Floor, Pune Banglore Highway Pashan Exit, Narhe, Pune, Maharashtra 411041";
